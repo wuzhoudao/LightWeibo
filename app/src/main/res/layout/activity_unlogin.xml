@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tabbar_profile_highlighted" />
+
+        <TextView
+            android:text="Jack Wu"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#11000000" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/home_bottombar_topdrive" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/tv_home"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_home_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:drawablePadding="-5dp"
+                android:drawableTop="@drawable/tabbar_home_auto"
+                android:gravity="center"
+                android:text="首页"
+                android:textColor="@color/home_bottombar_font"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tv_message"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:drawablePadding="-5dp"
+                android:drawableTop="@drawable/tabbar_message_auto"
+                android:gravity="center"
+                android:text="消息"
+                android:textColor="@color/home_bottombar_font"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fl_post"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rect_orgin_auto"
+                android:gravity="center"
+                android:src="@drawable/tabbar_compose_icon_add" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tv_discovery"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:drawablePadding="-5dp"
+                android:drawableTop="@drawable/tabbar_discover_auto"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="@color/home_bottombar_font"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tv_profile"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:drawablePadding="-5dp"
+                android:drawableTop="@drawable/tabbar_post_auto"
+                android:gravity="center"
+                android:text="我"
+                android:textColor="@color/home_bottombar_font"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
